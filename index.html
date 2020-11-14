@@ -11,3 +11,7 @@
 <a href="http://sao315.com/w/api/saoyisao?redirect_uri=需要接收结果的网址">扫一扫</a>
 </body>
 </html>
+<script>
+if (location.href.indexOf("qrresult=")>-1)
+    alert(location.href.split("qrresult=")[1]); //在您的程序中可对此数据进行处理
+</script>
