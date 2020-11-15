@@ -9,20 +9,10 @@
 </head>
 <body>
 
-<a href="http://sao315.com/w/api/saoyisao">扫描</a>
+<a href="http://sao315.com/w/api/saoyisao?redirect_uri=https://chenglong-coder.github.io/scan.github.io/">扫一扫</a>
 </body>
 </html>
 <script>
-var qr=GetQueryString("qrresult");
-if(qr){
-    //alert(qr);
-    $("#result").html(qr);
-}
- 
-function GetQueryString(name)
-{
-    var reg = new RegExp("\\b"+ name +"=([^&]*)");
-    var r = location.href.match(reg);
-    //if (r!=null) return decodeURIComponent(r[1]);
-}
+if (location.href.indexOf("qrresult=")>-1){
+    self.location='https://chenglong-coder.github.io/scan.github.io/';}
 </script>
