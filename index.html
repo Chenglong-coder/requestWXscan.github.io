@@ -13,6 +13,16 @@
 </html>
 <script>
 if (location.href.indexOf("qrresult=")>-1){
-    document.write("<embed src="scanPlaydi.mp3" hidden="true" autostart="true" loop="false">");
+    alert('scanPlaydi.mp3');
+    var audio = document.createElement('audio');
+    var source = document.createElement('source');   
+    source.type = "audio/mpeg";
+    source.type = "audio/mpeg";
+    source.src = 'scanPlaydi.mp3';   
+    source.autoplay = "autoplay";
+    source.controls = "controls";
+    audio.appendChild(source); 
+    audio.play();
+    
     self.location='https://chenglong-coder.github.io/scan.github.io/';}
 </script>
